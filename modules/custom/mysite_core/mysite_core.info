@@ -1,0 +1,15 @@
+name = MySite core
+description = Core features
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = mysite_core
+dependencies[] = features
+dependencies[] = text
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:1
+features[field][] = node-page-body
+features[node][] = page
+features[views_view][] = my_view
+features_exclude[dependencies][ctools] = ctools
